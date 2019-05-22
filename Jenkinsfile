@@ -10,6 +10,8 @@ timestamps { // set the timestamps on the jenkins console
         def JAVA_HOME = "/usr/lib/jvm/java-1.8.0-openjdk-amd64"
         def mvnHome = tool name: 'mvn35'
         def ROOTDIR = pwd() // workspace dir (/w/workspace/<job_name>)
+        def GATEWAY_JAVA_USERNAME = 'fabric-gateway-java'
+        def GATEWAY_JAVA_PASSWORD = 'cojrh85b30vf87w'
         // Set JAVA_HOME, and special PATH variables
         List javaEnv = [
           "PATH+MVN=${mvnHome}/bin:${JAVA_HOME}/bin",
